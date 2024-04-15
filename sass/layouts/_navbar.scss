@@ -1,0 +1,11 @@
+.l-navbar {
+  background-color: var(--white);
+  width: 100%;
+  padding: 12px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

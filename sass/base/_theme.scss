@@ -12,6 +12,7 @@
   --font-family-barlow: "Barlow", sans-serif;
 
   // REM font-sizes
+  --fs-12: 0.75rem;
   --fs-14: 0.875rem;
   --fs-16: 1rem;
   --fs-18: 1.125rem;
@@ -31,4 +32,11 @@
   --font-semi-bold: 600;
   --font-medium: 500;
   --font-normal: 400;
+
+  /*========== Breakpoints ==========*/
+  --bp-sm: 640px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1280px;
+  --bp-xxl: 1536px;
 }

@@ -16,6 +16,7 @@
   --black: #000000;
   /*========== Font and typography ==========*/
   --font-family-barlow: "Barlow", sans-serif;
+  --fs-12: 0.75rem;
   --fs-14: 0.875rem;
   --fs-16: 1rem;
   --fs-18: 1.125rem;
@@ -33,6 +34,47 @@
   --font-semi-bold: 600;
   --font-medium: 500;
   --font-normal: 400;
+  /*========== Breakpoints ==========*/
+  --bp-sm: 640px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1280px;
+  --bp-xxl: 1536px;
+}
+
+.l-floating-bar {
+  background-color: var(--red-banner);
+  width: 100%;
+}
+.l-floating-bar__content {
+  max-width: fit-content;
+  margin-inline: auto;
+  padding-block: 16.5px;
+}
+.l-floating-bar__text {
+  min-width: fit-content;
+  max-width: 245px;
+  text-align: center;
+  color: var(--white);
+  font-family: var(--font-family-barlow);
+  font-size: var(--fs-12);
+  font-weight: var(--font-medium);
+  line-height: 120%;
+}
+.l-floating-bar__text span {
+  font-weight: var(--font-bold);
+  text-decoration: underline;
+}
+
+.l-navbar {
+  background-color: var(--white);
+  width: 100%;
+  padding: 12px;
+}
+.l-navbar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
