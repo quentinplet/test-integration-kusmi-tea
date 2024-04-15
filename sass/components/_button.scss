@@ -1,0 +1,13 @@
+.c-button {
+  cursor: pointer;
+  width: fit-content;
+  padding-inline: 1rem;
+  font-size: var(--fs-16);
+  font-weight: var(--font-semi-bold);
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+}
