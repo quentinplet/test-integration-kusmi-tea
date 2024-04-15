@@ -1,3 +1,13 @@
 {
-  "description": ""
+  "name": "kusmi-tea-integration-test",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "sass": "sass --watch sass:"
+  },
+  "dependencies": {
+    "sass": "^1.75.0"
+  },
+  "author": "quentin-plet",
+  "license": "ISC"
 }
