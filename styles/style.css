@@ -8,6 +8,10 @@
   padding: 0;
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 /*=============== VARIABLES CSS ===============*/
 :root {
   /*========== Colors ==========*/
@@ -190,17 +194,80 @@
     padding-inline: 9.5rem;
   }
 }
+.u-title {
+  font-weight: var(--font-bold);
+  font-size: var(--fs-24);
+  font-family: var(--font-family-barlow);
+  line-height: 120%;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.c-modal {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80%;
+  border: 1px solid var(--black);
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.c-modal__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 70ch;
+}
+.c-modal__title {
+  margin-block-end: 1rem;
+  text-align: center;
+}
+.c-modal__text {
+  font-size: var(--fs-14);
+  font-weight: var(--font-medium);
+  margin-block-end: 1rem;
+}
+.c-modal::backdrop {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.c-modal.fade-in {
+  animation: fadeIn 0.2s ease-in;
+}
+
+.c-modal.fade-out {
+  animation: fadeOut 0.2s ease-in;
+}
+
+/* Animation de fondu pour le modal */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 body {
   font-family: var(--font-family-barlow);
+  min-height: 100vh;
 }
 
 /* Product List Section */
 .product-list-section__title {
-  font-family: var(--font-family-barlow);
-  font-size: var(--fs-24);
-  font-weight: var(--font-bold);
-  text-transform: uppercase;
-  color: var(--black);
   margin-block-end: 24px;
 }
 .product-list-section__items-container {
@@ -219,13 +286,6 @@ body {
   justify-content: center;
   gap: 24px;
 }
-.discover-section__title {
-  font-weight: var(--font-bold);
-  font-size: var(--fs-24);
-  line-height: 28.8px;
-  color: var(--black);
-  text-transform: uppercase;
-}
 .discover-section__image {
   width: 100%;
   max-width: 640px;
@@ -242,13 +302,6 @@ body {
 }
 .discover-section__info-titles {
   display: none;
-}
-.discover-section__info-title {
-  font-size: var(--fs-24);
-  font-weight: var(--font-bold);
-  color: var(--black);
-  line-height: 28.8px;
-  text-transform: uppercase;
 }
 .discover-section__info-subtitle {
   font-size: var(--fs-18);

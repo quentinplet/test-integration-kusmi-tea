@@ -1,0 +1,70 @@
+@use "../base/theme";
+
+.c-modal {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 80%;
+
+  border: 1px solid var(--black);
+  box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+
+  padding: 2rem;
+
+  text-align: center;
+
+  transition: all 0.3s ease-in-out;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 70ch;
+  }
+
+  &__title {
+    margin-block-end: 1rem;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: var(--fs-14);
+    font-weight: var(--font-medium);
+    margin-block-end: 1rem;
+  }
+
+  &::backdrop {
+    background: rgb(0 0 0 / 0.4);
+  }
+}
+
+.c-modal.fade-in {
+  animation: fadeIn 0.2s ease-in;
+}
+
+.c-modal.fade-out {
+  animation: fadeOut 0.2s ease-in;
+}
+
+/* Animation de fondu pour le modal */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

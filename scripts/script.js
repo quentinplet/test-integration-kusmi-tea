@@ -27,3 +27,18 @@ let swiperCards = new Swiper(".product-carousel-section__content", {
     },
   },
 });
+
+/*=============== Modal ===============*/
+const modal = document.querySelector("#modal");
+const openModal = document.querySelector(".open-button");
+const closeModal = document.querySelector(".close-button");
+
+openModal.addEventListener("click", () => {
+  modal.classList.add("fade-in");
+  modal.showModal();
+});
+
+closeModal.addEventListener("click", () => {
+  modal.classList.remove("fade-in");
+  modal.close();
+});

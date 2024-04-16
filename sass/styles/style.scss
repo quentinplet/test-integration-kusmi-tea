@@ -4,19 +4,17 @@
 @use "../components/productCard";
 @use "../components/button";
 @use "../utils/classes";
+@use "../utils/typography";
+@use "../components/modal";
 
 body {
   font-family: var(--font-family-barlow);
+  min-height: 100vh;
 }
 
 /* Product List Section */
 .product-list-section {
   &__title {
-    font-family: var(--font-family-barlow);
-    font-size: var(--fs-24);
-    font-weight: var(--font-bold);
-    text-transform: uppercase;
-    color: var(--black);
     margin-block-end: 24px;
   }
 
@@ -40,14 +38,6 @@ body {
     gap: 24px;
   }
 
-  &__title {
-    font-weight: var(--font-bold);
-    font-size: var(--fs-24);
-    line-height: 28.8px;
-    color: var(--black);
-    text-transform: uppercase;
-  }
-
   &__image {
     width: 100%;
     max-width: 640px;
@@ -66,14 +56,6 @@ body {
 
   &__info-titles {
     display: none;
-  }
-
-  &__info-title {
-    font-size: var(--fs-24);
-    font-weight: var(--font-bold);
-    color: var(--black);
-    line-height: 28.8px;
-    text-transform: uppercase;
   }
 
   &__info-subtitle {
