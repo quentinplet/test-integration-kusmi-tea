@@ -42,3 +42,17 @@ closeModal.addEventListener("click", () => {
   modal.classList.remove("fade-in");
   modal.close();
 });
+
+//When clicked outside the modal, close it
+modal.addEventListener("click", (e) => {
+  const dialogDimensions = modal.getBoundingClientRect();
+  if (
+    e.clientX < dialogDimensions.left ||
+    e.clientX >= dialogDimensions.right ||
+    e.clientY < dialogDimensions.top ||
+    e.clientY >= dialogDimensions.bottom
+  ) {
+    modal.classList.remove("fade-in");
+    modal.close();
+  }
+});
