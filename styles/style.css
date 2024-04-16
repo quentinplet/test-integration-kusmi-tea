@@ -18,7 +18,7 @@ body {
   --red-banner: #9b090d;
   --white: #ffffff;
   --black: #000000;
-  --black-light: #585757;
+  --black-light: #797979;
   /*========== Font and typography ==========*/
   --font-family-barlow: "Barlow", sans-serif;
   --fs-12: 0.75rem;
@@ -204,17 +204,17 @@ body {
 }
 
 .c-modal {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: auto;
   font-size: 80%;
   border: 1px solid var(--black);
+  border-radius: 5px;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
-  padding: 2rem;
-  text-align: center;
+  padding: 1rem;
   transition: all 0.3s ease-in-out;
 }
 .c-modal__content {
+  width: fit-content;
+  margin-inline: auto;
   display: flex;
   flex-direction: column;
   max-width: 70ch;
@@ -226,10 +226,25 @@ body {
 .c-modal__text {
   font-size: var(--fs-14);
   font-weight: var(--font-medium);
-  margin-block-end: 1rem;
+  text-align: left;
 }
 .c-modal::backdrop {
   background: rgba(0, 0, 0, 0.4);
+}
+.c-modal__close-button {
+  position: absolute;
+  fill: var(--black-light);
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: var(--white);
+  border: none;
+  width: fit-content;
+  margin-inline: auto;
+}
+.c-modal__close-button:hover {
+  fill: var(--black);
 }
 
 .c-modal.fade-in {
@@ -259,6 +274,12 @@ body {
   to {
     opacity: 0;
     visibility: hidden;
+  }
+}
+@media (min-width: 640px) {
+  .c-modal {
+    text-align: center;
+    padding: 2rem;
   }
 }
 body {

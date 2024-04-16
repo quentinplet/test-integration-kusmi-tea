@@ -1,22 +1,24 @@
 @use "../base/theme";
 
 .c-modal {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  margin: auto;
 
   font-size: 80%;
 
   border: 1px solid var(--black);
+  border-radius: 5px;
   box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
 
-  padding: 2rem;
-
-  text-align: center;
+  padding: 1rem;
 
   transition: all 0.3s ease-in-out;
 
   &__content {
+    width: fit-content;
+    margin-inline: auto;
     display: flex;
     flex-direction: column;
     max-width: 70ch;
@@ -30,11 +32,28 @@
   &__text {
     font-size: var(--fs-14);
     font-weight: var(--font-medium);
-    margin-block-end: 1rem;
+    text-align: left;
   }
 
   &::backdrop {
     background: rgb(0 0 0 / 0.4);
+  }
+
+  &__close-button {
+    position: absolute;
+    fill: var(--black-light);
+    top: 0;
+    right: 0;
+    padding: 0.5rem;
+    cursor: pointer;
+    background-color: var(--white);
+    border: none;
+    width: fit-content;
+    margin-inline: auto;
+
+    &:hover {
+      fill: var(--black);
+    }
   }
 }
 
@@ -66,5 +85,12 @@
   to {
     opacity: 0;
     visibility: hidden;
+  }
+}
+
+@media (min-width: 640px) {
+  .c-modal {
+    text-align: center;
+    padding: 2rem;
   }
 }
