@@ -66,6 +66,11 @@
   text-decoration: underline;
 }
 
+@media screen and (min-width: 640px) {
+  .l-floating-bar__text {
+    max-width: fit-content;
+  }
+}
 .l-navbar {
   background-color: var(--white);
   width: 100%;
@@ -76,7 +81,17 @@
   justify-content: space-between;
   align-items: center;
 }
+.l-navbar__logo-list {
+  display: flex;
+  width: 94px;
+  justify-content: space-between;
+}
 
+@media screen and (min-width: 640px) {
+  .l-navbar {
+    padding: 12px 56px;
+  }
+}
 .c-product-card {
   width: 100%;
   height: auto;
@@ -176,10 +191,32 @@ body {
 }
 .discover-section__image {
   width: 100%;
+  max-width: 640px;
   height: auto;
   max-height: 231px;
   object-position: 25% 75%;
   object-fit: cover;
+}
+.discover-section__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.discover-section__info-titles {
+  display: none;
+}
+.discover-section__info-title {
+  font-size: var(--fs-24);
+  font-weight: var(--font-bold);
+  color: var(--black);
+  line-height: 28.8px;
+  text-transform: uppercase;
+}
+.discover-section__info-subtitle {
+  font-size: var(--fs-18);
+  font-weight: var(--font-medium);
+  line-height: 21.6px;
 }
 .discover-section__description {
   font-size: var(--fs-14);
@@ -239,6 +276,10 @@ body {
   .product-list-section__items-container {
     grid-template-columns: repeat(2, minmax(171px, 200px));
   }
+  .discover-section__description {
+    max-width: 70%;
+    text-align: center;
+  }
 }
 @media (min-width: 640px) {
   .product-list-section__items-container {
@@ -249,6 +290,31 @@ body {
   .product-list-section__items-container {
     grid-template-columns: repeat(4, minmax(171px, 200px));
     gap: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .discover-section__container {
+    flex-direction: row;
+    padding-inline: 80px;
+    gap: 24px;
+  }
+  .discover-section__image {
+    max-width: 1038px;
+    max-height: 334px;
+    object-position: 30% 70%;
+    flex-basis: 60%;
+  }
+  .discover-section__info {
+    flex-basis: 40%;
+  }
+  .discover-section__title {
+    display: none;
+  }
+  .discover-section__info-titles {
+    display: block;
+  }
+  .discover-section__description {
+    max-width: 525px;
   }
 }
 @media (min-width: 1280px) {
