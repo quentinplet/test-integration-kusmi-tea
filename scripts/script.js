@@ -1,7 +1,7 @@
 /*=============== SWIPER JS ===============*/
 let swiperCards = new Swiper(".product-carousel-section__content", {
   loop: true,
-  spaceBetween: 32,
+  spaceBetween: 8,
   grabCursor: true,
 
   navigation: {
@@ -9,12 +9,20 @@ let swiperCards = new Swiper(".product-carousel-section__content", {
     prevEl: ".swiper-button-prev",
   },
 
+  slidesPerView: 1,
+
   breakpoints: {
-    600: {
+    390: {
       slidesPerView: 2,
     },
-    968: {
+    600: {
       slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 4,
+    },
+    968: {
+      slidesPerView: 5,
     },
   },
 });
