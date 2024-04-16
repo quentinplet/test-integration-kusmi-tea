@@ -61,7 +61,7 @@ body {
   &__info-subtitle {
     font-size: var(--fs-18);
     font-weight: var(--font-medium);
-    line-height: 21.6px;
+    line-height: 120%;
   }
 
   &__description {
@@ -69,7 +69,7 @@ body {
     font-weight: var(--font-medium);
     max-width: 273px;
     margin-inline: auto;
-    line-height: 16.8px;
+    line-height: 120%;
     color: var(--black);
   }
 }
