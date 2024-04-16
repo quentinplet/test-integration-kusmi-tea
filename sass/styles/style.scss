@@ -3,6 +3,7 @@
 @use "../layouts/navbar";
 @use "../components/productCard";
 @use "../components/button";
+@use "../utils/classes";
 
 body {
   font-family: var(--font-family-barlow);
@@ -10,12 +11,6 @@ body {
 
 /* Product List Section */
 .product-list-section {
-  &__container {
-    padding: 24px 16px 20px;
-    max-width: max-content;
-    margin-inline: auto;
-  }
-
   &__title {
     font-family: var(--font-family-barlow);
     font-size: var(--fs-24);
@@ -100,9 +95,7 @@ body {
 /* Product Carousel Section */
 .product-carousel-section {
   &__container {
-    padding: 24px 16px 20px;
-    max-width: max-content;
-    margin-inline: auto;
+    margin-block-end: 2rem;
   }
 
   &__title {
@@ -126,11 +119,21 @@ body {
   }
 
   &__button {
-    border: 2px solid var(--black);
+    border: 2px solid var(--black-light);
     border-radius: 50%;
     padding: 25px;
     background-color: var(--white);
     top: 45%;
+    img {
+      filter: invert(0.3);
+    }
+
+    &:hover {
+      border-color: var(--black);
+      img {
+        filter: invert(0);
+      }
+    }
   }
 }
 
@@ -155,7 +158,7 @@ body {
 @media (min-width: 390px) {
   .product-list-section {
     &__items-container {
-      grid-template-columns: repeat(2, minmax(171px, 200px));
+      grid-template-columns: repeat(2, minmax(171px, 220px));
     }
   }
 
@@ -173,12 +176,18 @@ body {
       gap: 2rem;
     }
   }
+  .product-carousel-section {
+    &__title {
+      max-width: fit-content;
+      margin-inline: auto;
+    }
+  }
 }
 
 @media (min-width: 768px) {
   .product-list-section {
     &__items-container {
-      grid-template-columns: repeat(4, minmax(171px, 200px));
+      grid-template-columns: repeat(4, minmax(150px, 300px));
       gap: 1rem;
     }
   }
@@ -219,11 +228,17 @@ body {
 
 @media (min-width: 1280px) {
   .product-list-section {
-    &__container {
-      padding-inline: 8rem;
-    }
     &__items-container {
       grid-template-columns: repeat(4, minmax(171px, 390px));
+    }
+  }
+}
+
+@media (min-width: 1536px) {
+  .product-list-section {
+    &__container {
+      padding-inline: 9.5rem;
+      padding-block-end: 1rem;
     }
   }
 }

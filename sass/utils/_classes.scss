@@ -1,0 +1,30 @@
+.u-container {
+  padding-block: 24px 20px;
+  padding-inline: 1rem;
+  max-width: max-content;
+  margin-inline: auto;
+}
+
+@media (min-width: 640px) {
+  .u-container {
+    padding-inline: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .u-container {
+    padding-inline: 4rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .u-container {
+    padding-inline: 8rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .u-container {
+    padding-inline: 9.5rem;
+  }
+}

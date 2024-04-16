@@ -3,6 +3,7 @@ let swiperCards = new Swiper(".product-carousel-section__content", {
   loop: true,
   spaceBetween: 8,
   grabCursor: true,
+  keyboard: true,
 
   navigation: {
     nextEl: ".swiper-button-next",
