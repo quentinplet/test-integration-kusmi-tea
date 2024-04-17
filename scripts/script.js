@@ -22,9 +22,6 @@ let swiperCards = new Swiper(".product-carousel-section__content", {
     768: {
       slidesPerView: 4,
     },
-    1024: {
-      slidesPerView: 4,
-    },
     1280: {
       slidesPerView: 5,
     },

@@ -405,7 +405,7 @@ body {
 }
 
 /* Swiper class */
-/* the new container */
+/* for moving the arrows outside the slider*/
 .swiper-container {
   position: relative;
   width: 100%;
@@ -445,7 +445,7 @@ body {
     text-align: center;
   }
   .product-carousel-section__card__text {
-    height: 67px;
+    height: 4.1875rem;
   }
 }
 @media (min-width: 640px) {
