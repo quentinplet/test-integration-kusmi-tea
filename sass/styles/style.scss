@@ -15,26 +15,26 @@ body {
 /* Product List Section */
 .product-list-section {
   &__title {
-    margin-block-end: 24px;
+    margin-block-end: 1.5rem;
   }
 
   &__items-container {
     display: grid;
     grid-template-columns: repeat(2, minmax(130px, 171px));
-    gap: 16px;
+    gap: 1rem;
   }
 }
 
 /* Discover section */
 .discover-section {
   &__container {
-    padding-block: 24px;
+    padding-block: 1.5rem;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 24px;
+    gap: 1.5rem;
   }
 
   &__image {
@@ -50,7 +50,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: 1.5rem;
   }
 
   &__info-titles {
@@ -66,7 +66,7 @@ body {
   &__description {
     font-size: var(--fs-14);
     font-weight: var(--font-medium);
-    max-width: 273px;
+    max-width: 17rem;
     margin-inline: auto;
     line-height: 120%;
     color: var(--black);
@@ -84,7 +84,7 @@ body {
     font-weight: var(--font-bold);
     text-transform: uppercase;
     color: var(--black);
-    margin-block-end: 24px;
+    margin-block-end: 1.5rem;
   }
 
   &__card {
@@ -102,7 +102,7 @@ body {
   &__button {
     border: 2px solid var(--black-light);
     border-radius: 50%;
-    padding: 25px;
+    padding: 1.5rem;
     background-color: var(--white);
     top: 45%;
     img {
@@ -187,7 +187,7 @@ body {
       }
 
       &__text {
-        height: 86px;
+        height: 5.375rem;
       }
     }
   }
@@ -197,8 +197,8 @@ body {
   .discover-section {
     &__container {
       flex-direction: row;
-      padding-inline: 80px;
-      gap: 24px;
+      padding-inline: 5rem;
+      gap: 1.5rem;
     }
 
     &__image {
@@ -231,6 +231,16 @@ body {
     &__items-container {
       grid-template-columns: repeat(4, minmax(171px, 390px));
     }
+
+    &__card {
+      &__text {
+        margin-block-end: 0;
+        height: auto;
+      }
+      &__price {
+        margin-block-end: 0;
+      }
+    }
   }
 }
 
@@ -249,15 +259,6 @@ body {
     &__container {
       padding-inline: 9.5rem;
       padding-block-end: 1rem;
-    }
-
-    &__card__text {
-      margin-block-end: 0;
-      height: auto;
-    }
-
-    &__card__price {
-      margin-block-end: 0;
     }
   }
 }

@@ -1,7 +1,7 @@
 .l-navbar {
   background-color: var(--white);
   width: 100%;
-  padding: 12px;
+  padding: 0.75rem;
 
   &__container {
     display: flex;
@@ -24,6 +24,6 @@
 
 @media screen and (min-width: 640px) {
   .l-navbar {
-    padding: 12px 56px;
+    padding: 0.75rem 3.5rem;
   }
 }
