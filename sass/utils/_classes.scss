@@ -7,24 +7,24 @@
 
 @media (min-width: 640px) {
   .u-container {
-    padding-inline: 2rem;
+    padding-inline: 2rem !important;
   }
 }
 
 @media (min-width: 1024px) {
   .u-container {
-    padding-inline: 4rem;
+    padding-inline: 4rem !important;
   }
 }
 
 @media (min-width: 1280px) {
   .u-container {
-    padding-inline: 6rem;
+    padding-inline: 6rem !important;
   }
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 1570px) {
   .u-container {
-    padding-inline: 9.5rem;
+    padding-inline: 9.5rem !important;
   }
 }

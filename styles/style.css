@@ -204,22 +204,22 @@ body {
 
 @media (min-width: 640px) {
   .u-container {
-    padding-inline: 2rem;
+    padding-inline: 2rem !important;
   }
 }
 @media (min-width: 1024px) {
   .u-container {
-    padding-inline: 4rem;
+    padding-inline: 4rem !important;
   }
 }
 @media (min-width: 1280px) {
   .u-container {
-    padding-inline: 6rem;
+    padding-inline: 6rem !important;
   }
 }
-@media (min-width: 1536px) {
+@media (min-width: 1570px) {
   .u-container {
-    padding-inline: 9.5rem;
+    padding-inline: 9.5rem !important;
   }
 }
 .u-title {
@@ -323,6 +323,12 @@ body {
   grid-template-columns: repeat(2, minmax(130px, 171px));
   gap: 1rem;
 }
+.product-list-section #coffret-ducasse-text h2 {
+  font-size: var(--fs-16);
+}
+.product-list-section #coffret-ducasse-text p {
+  font-size: var(--fs-14);
+}
 
 /* Discover section */
 .discover-section__container {
@@ -376,12 +382,27 @@ body {
   color: var(--black);
   margin-block-end: 1.5rem;
 }
+.product-carousel-section__card__image-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 207px;
+}
 .product-carousel-section__card img {
   height: 207px;
   object-fit: contain;
+  transform: scale(0.75);
+}
+.product-carousel-section__card__info {
+  height: 160px;
+  justify-content: space-between;
 }
 .product-carousel-section__card__text {
-  height: 4.1875rem;
+  margin-bottom: 0;
+}
+.product-carousel-section__card__price {
+  margin-bottom: 0;
 }
 .product-carousel-section__button {
   border: 2px solid var(--black-light);
@@ -401,6 +422,17 @@ body {
 }
 .product-carousel-section #tisaniere-image {
   object-fit: cover;
+  transform: scale(0.9);
+  position: relative;
+  bottom: -10px;
+}
+.product-carousel-section #gourde-aqua-rosa-image {
+  position: relative;
+  bottom: -20px;
+}
+.product-carousel-section #lorem-ipsum-3-image {
+  position: relative;
+  bottom: -10px;
 }
 
 /* Swiper class */
@@ -408,6 +440,12 @@ body {
 .swiper-container {
   position: relative;
   width: 100%;
+  padding-inline: 10px;
+}
+
+.product-carousel-section__container,
+.swiper-container {
+  padding-inline-end: 0;
 }
 
 /* fix the buttons positions */
@@ -430,7 +468,7 @@ body {
 }
 
 .swiper-button-next {
-  right: 0;
+  right: 5px;
 }
 
 /* Media Queries */
@@ -438,22 +476,35 @@ body {
   .product-list-section__items-container {
     grid-template-columns: repeat(2, minmax(171px, 220px));
   }
+  .product-list-section #coffret-ducasse-text h2 {
+    font-size: var(--fs-18);
+    line-height: 110%;
+  }
+  .product-list-section #coffret-ducasse-text p {
+    font-size: var(--fs-16);
+    line-height: 105%;
+  }
   .discover-section__description {
     max-width: 70%;
     text-align: center;
   }
-  .product-carousel-section__card__text {
-    height: 4.1875rem;
-  }
 }
 @media (min-width: 420px) {
   .swiper-container {
-    padding: 0 30px;
+    padding-inline-start: 30px;
+  }
+}
+@media (min-width: 550px) {
+  .product-carousel-section__container {
+    padding-inline-end: 1rem;
+  }
+  .swiper-container {
+    padding-inline-end: 30px;
   }
 }
 @media (min-width: 640px) {
   .swiper-container {
-    padding: 0 50px;
+    padding-inline: 50px;
   }
   .product-list-section__items-container {
     gap: 2rem;
@@ -516,14 +567,27 @@ body {
   }
 }
 @media (min-width: 1460px) {
+  .product-carousel-section__card__info {
+    height: auto;
+  }
   .product-carousel-section__card__text {
     height: auto;
+    margin-bottom: 1.25rem;
+  }
+  .product-carousel-section__card__price {
+    margin-bottom: 0.5rem;
   }
 }
 @media (min-width: 1536px) {
   .product-list-section__container {
     padding-inline: 9.5rem;
     padding-block-end: 1rem;
+  }
+  .product-list-section #coffret-ducasse-text h2 {
+    line-height: 120%;
+  }
+  .product-list-section #coffret-ducasse-text p {
+    line-height: 120%;
   }
 }
 

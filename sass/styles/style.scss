@@ -23,6 +23,15 @@ body {
     grid-template-columns: repeat(2, minmax(130px, 171px));
     gap: 1rem;
   }
+
+  #coffret-ducasse-text {
+    h2 {
+      font-size: var(--fs-16);
+    }
+    p {
+      font-size: var(--fs-14);
+    }
+  }
 }
 
 /* Discover section */
@@ -88,13 +97,31 @@ body {
   }
 
   &__card {
+    &__image-wrapper {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 207px;
+    }
+
     img {
       height: 207px;
       object-fit: contain;
+      transform: scale(0.75);
+    }
+
+    &__info {
+      height: 160px;
+      justify-content: space-between;
     }
 
     &__text {
-      height: 4.1875rem;
+      margin-bottom: 0;
+    }
+
+    &__price {
+      margin-bottom: 0;
     }
   }
 
@@ -118,6 +145,17 @@ body {
 
   #tisaniere-image {
     object-fit: cover;
+    transform: scale(0.9);
+    position: relative;
+    bottom: -10px;
+  }
+  #gourde-aqua-rosa-image {
+    position: relative;
+    bottom: -20px;
+  }
+  #lorem-ipsum-3-image {
+    position: relative;
+    bottom: -10px;
   }
 }
 
@@ -127,6 +165,12 @@ body {
 .swiper-container {
   position: relative;
   width: 100%;
+  padding-inline: 10px;
+}
+
+.product-carousel-section__container,
+.swiper-container {
+  padding-inline-end: 0;
 }
 
 /* fix the buttons positions */
@@ -148,7 +192,7 @@ body {
 }
 
 .swiper-button-next {
-  right: 0;
+  right: 5px;
 }
 
 /* Media Queries */
@@ -156,6 +200,17 @@ body {
   .product-list-section {
     &__items-container {
       grid-template-columns: repeat(2, minmax(171px, 220px));
+    }
+
+    #coffret-ducasse-text {
+      h2 {
+        font-size: var(--fs-18);
+        line-height: 110%;
+      }
+      p {
+        font-size: var(--fs-16);
+        line-height: 105%;
+      }
     }
   }
 
@@ -165,25 +220,26 @@ body {
       text-align: center;
     }
   }
-
-  .product-carousel-section {
-    &__card {
-      &__text {
-        height: 4.1875rem;
-      }
-    }
-  }
 }
 
 @media (min-width: 420px) {
   .swiper-container {
-    padding: 0 30px;
+    padding-inline-start: 30px;
+  }
+}
+
+@media (min-width: 550px) {
+  .product-carousel-section__container {
+    padding-inline-end: 1rem;
+  }
+  .swiper-container {
+    padding-inline-end: 30px;
   }
 }
 
 @media (min-width: 640px) {
   .swiper-container {
-    padding: 0 50px;
+    padding-inline: 50px;
   }
 
   .product-list-section {
@@ -275,8 +331,15 @@ body {
 @media (min-width: 1460px) {
   .product-carousel-section {
     &__card {
+      &__info {
+        height: auto;
+      }
       &__text {
         height: auto;
+        margin-bottom: 1.25rem;
+      }
+      &__price {
+        margin-bottom: 0.5rem;
       }
     }
   }
@@ -287,6 +350,15 @@ body {
     &__container {
       padding-inline: 9.5rem;
       padding-block-end: 1rem;
+    }
+
+    #coffret-ducasse-text {
+      h2 {
+        line-height: 120%;
+      }
+      p {
+        line-height: 120%;
+      }
     }
   }
 }
