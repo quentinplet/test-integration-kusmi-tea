@@ -214,7 +214,7 @@ body {
 }
 @media (min-width: 1280px) {
   .u-container {
-    padding-inline: 8rem;
+    padding-inline: 6rem;
   }
 }
 @media (min-width: 1536px) {
@@ -400,8 +400,27 @@ body {
 .product-carousel-section__button:hover img {
   filter: invert(0);
 }
+.product-carousel-section #tisaniere-image {
+  object-fit: cover;
+}
 
 /* Swiper class */
+/* the new container */
+.swiper-container {
+  position: relative;
+  width: 100%;
+  padding: 0 50px;
+}
+
+/* fix the buttons positions */
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
 .swiper-button-prev:after,
 .swiper-button-next:after {
   content: "";
