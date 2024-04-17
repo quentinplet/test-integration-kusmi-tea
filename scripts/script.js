@@ -10,12 +10,9 @@ let swiperCards = new Swiper(".product-carousel-section__content", {
     prevEl: ".swiper-button-prev",
   },
 
-  slidesPerView: 1,
+  slidesPerView: 2,
 
   breakpoints: {
-    390: {
-      slidesPerView: 2,
-    },
     640: {
       slidesPerView: 3,
     },

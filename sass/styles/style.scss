@@ -97,6 +97,10 @@ body {
       width: fit-content;
       margin-inline: auto;
     }
+
+    &__text {
+      height: 4.1875rem;
+    }
   }
 
   &__button {
@@ -128,7 +132,6 @@ body {
 .swiper-container {
   position: relative;
   width: 100%;
-  padding: 0 50px;
 }
 
 /* fix the buttons positions */
@@ -178,6 +181,10 @@ body {
 }
 
 @media (min-width: 640px) {
+  .swiper-container {
+    padding: 0 50px;
+  }
+
   .product-list-section {
     &__items-container {
       gap: 2rem;

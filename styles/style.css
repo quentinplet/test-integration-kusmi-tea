@@ -384,6 +384,9 @@ body {
   width: fit-content;
   margin-inline: auto;
 }
+.product-carousel-section__card__text {
+  height: 4.1875rem;
+}
 .product-carousel-section__button {
   border: 2px solid var(--black-light);
   border-radius: 50%;
@@ -409,7 +412,6 @@ body {
 .swiper-container {
   position: relative;
   width: 100%;
-  padding: 0 50px;
 }
 
 /* fix the buttons positions */
@@ -449,6 +451,9 @@ body {
   }
 }
 @media (min-width: 640px) {
+  .swiper-container {
+    padding: 0 50px;
+  }
   .product-list-section__items-container {
     gap: 2rem;
   }
