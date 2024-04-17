@@ -14,8 +14,6 @@
 
   padding: 1rem;
 
-  transition: all 0.3s ease-in-out;
-
   &__content {
     width: fit-content;
     margin-inline: auto;
@@ -62,7 +60,7 @@
 }
 
 .c-modal.fade-out {
-  animation: fadeOut 0.2s ease-in;
+  animation: fadeOut 0.2s ease;
 }
 
 /* Animation de fondu pour le modal */

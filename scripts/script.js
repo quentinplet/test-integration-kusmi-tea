@@ -16,13 +16,16 @@ let swiperCards = new Swiper(".product-carousel-section__content", {
     390: {
       slidesPerView: 2,
     },
-    600: {
+    640: {
       slidesPerView: 3,
     },
     768: {
       slidesPerView: 4,
     },
-    968: {
+    // 968: {
+    //   slidesPerView: 4,
+    // },
+    1024: {
       slidesPerView: 5,
     },
   },

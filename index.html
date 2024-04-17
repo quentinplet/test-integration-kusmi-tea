@@ -13,6 +13,7 @@
     <title>Test intégration Kusmi Tea</title>
   </head>
   <body>
+    <!--------- HEADER ----------->
     <header>
       <div class="l-floating-bar">
         <div class="l-floating-bar__content">
@@ -53,6 +54,7 @@
       </nav>
     </header>
 
+    <!--------- PRODUCT LIST SECTION ----------->
     <section class="product-list-section">
       <div class="u-container product-list-section__container">
         <h1 class="u-title product-list-section__title">Nos Bestsellers</h1>
@@ -67,12 +69,18 @@
                 class="c-product-card__image"
               />
             </div>
-            <div class="c-product-card__info">
-              <div class="c-product-card__text">
+            <div class="c-product-card__info product-list-section__card__info">
+              <div
+                class="c-product-card__text product-list-section__card__text"
+              >
                 <h2 class="c-product-card__title">Bundle 45E infu + gourde</h2>
                 <p class="c-product-card__description">Lorem Ipsum</p>
               </div>
-              <div class="c-product-card__price">17.90€</div>
+              <div
+                class="c-product-card__price product-list-section__card__price"
+              >
+                17.90€
+              </div>
               <button class="c-button">Ajouter</button>
             </div>
           </article>
@@ -80,19 +88,27 @@
           <article class="c-product-card product-list-section__card">
             <div class="c-product-card__image-wrapper">
               <img
-                src="./assets/images/bundle-45E-infu-gourde.png"
-                alt=""
-                width="1066"
-                height="1332"
+                src="./assets/images/bundle-45E-fourreau.png"
+                alt="bundle 45E et fourreau"
                 class="c-product-card__image"
+                width="888"
+                height="1332"
               />
             </div>
-            <div class="c-product-card__info">
-              <div class="c-product-card__text">
-                <h2 class="c-product-card__title">Bundle 45E infu + gourde</h2>
+            <div class="c-product-card__info product-list-section__card__info">
+              <div
+                class="c-product-card__text product-list-section__card__text"
+              >
+                <h2 class="c-product-card__title">
+                  Bundle 45E infu + fourreau
+                </h2>
                 <p class="c-product-card__description">Lorem Ipsum</p>
               </div>
-              <div class="c-product-card__price">17.90€</div>
+              <div
+                class="c-product-card__price product-list-section__card__price"
+              >
+                17.90€
+              </div>
               <button class="c-button">Ajouter</button>
             </div>
           </article>
@@ -100,38 +116,58 @@
           <article class="c-product-card product-list-section__card">
             <div class="c-product-card__image-wrapper">
               <img
-                src="./assets/images/bundle-45E-infu-gourde.png"
-                alt=""
+                src="./assets/images/coffret-la-collection-Alain-Ducasse-bio.png"
+                alt="coffret la collection Alain Ducasse bio"
+                class="c-product-card__image"
                 width="1066"
                 height="1332"
-                class="c-product-card__image"
               />
             </div>
-            <div class="c-product-card__info">
-              <div class="c-product-card__text">
-                <h2 class="c-product-card__title">Bundle 45E infu + gourde</h2>
-                <p class="c-product-card__description">Lorem Ipsum</p>
+            <div class="c-product-card__info product-list-section__card__info">
+              <div
+                class="c-product-card__text product-list-section__card__text"
+              >
+                <h2 class="c-product-card__title">
+                  Coffret La Collection Alain Ducasse bio
+                </h2>
+                <p class="c-product-card__description">
+                  Coffret La Collection Alain Ducasse bio
+                </p>
               </div>
-              <div class="c-product-card__price">17.90€</div>
+              <div
+                class="c-product-card__price product-list-section__card__price"
+              >
+                59.90€
+              </div>
               <button class="c-button">Ajouter</button>
             </div>
           </article>
+
           <article class="c-product-card product-list-section__card">
             <div class="c-product-card__image-wrapper">
               <img
-                src="./assets/images/bundle-45E-infu-gourde.png"
-                alt=""
+                src="./assets/images/rituel-sommeil.png"
+                alt="coffret la collection Alain Ducasse bio"
+                class="c-product-card__image"
                 width="1066"
                 height="1332"
-                class="c-product-card__image"
               />
             </div>
-            <div class="c-product-card__info">
-              <div class="c-product-card__text">
-                <h2 class="c-product-card__title">Bundle 45E infu + gourde</h2>
-                <p class="c-product-card__description">Lorem Ipsum</p>
+            <div class="c-product-card__info product-list-section__card__info">
+              <div
+                class="c-product-card__text product-list-section__card__text"
+              >
+                <h2 class="c-product-card__title">Rituel Sommeil</h2>
+                <p class="c-product-card__description">
+                  Tisane pour dormir, délicieuse et bio
+                </p>
+                <p class="c-product-card__description-2">Boîte 100g</p>
               </div>
-              <div class="c-product-card__price">17.90€</div>
+              <div
+                class="c-product-card__price product-list-section__card__price"
+              >
+                23.90€
+              </div>
               <button class="c-button">Ajouter</button>
             </div>
           </article>
@@ -139,6 +175,7 @@
       </div>
     </section>
 
+    <!--------- DISCOVER SECTION ----------->
     <section class="discover-section">
       <div class="discover-section__container">
         <h1 class="u-title discover-section__title">Lorem Ipsum Dolor</h1>
@@ -169,6 +206,7 @@
       </div>
     </section>
 
+    <!--------- MODAL ----------->
     <dialog class="c-modal" id="modal">
       <div class="c-modal__content">
         <h2 class="u-title c-modal__title">Lorem Ipsum Dolor</h2>
@@ -201,6 +239,7 @@
       </div>
     </dialog>
 
+    <!--------- PRODUCT CAROUSEL SECTION ----------->
     <section class="product-carousel-section">
       <div class="u-container product-carousel-section__container">
         <h1 class="u-title product-carousel-section__title">Nos Accessoires</h1>
@@ -214,7 +253,7 @@
               >
                 <img
                   src="./assets/images/fouet-et-spatule.png"
-                  alt=""
+                  alt="fouet et spatule"
                   class="c-product-card__image"
                   width="400"
                   height="475"
@@ -223,13 +262,15 @@
               <div
                 class="c-product-card__info product-carousel-section__card__info"
               >
-                <div class="c-product-card__text">
-                  <h2 class="c-product-card__title">
-                    Bundle 45E infu + gourde
-                  </h2>
-                  <p class="c-product-card__description">Lorem Ipsum</p>
+                <div
+                  class="c-product-card__text product-carousel-section__card__text"
+                >
+                  <h2 class="c-product-card__title">Fouet et spatule</h2>
+                  <p class="c-product-card__description">
+                    Coffret d’accessoires en bambou
+                  </p>
                 </div>
-                <div class="c-product-card__price">17.90€</div>
+                <div class="c-product-card__price">34,90€</div>
                 <button class="c-button">Ajouter</button>
               </div>
             </article>
@@ -239,21 +280,25 @@
             >
               <div class="c-product-card__image-wrapper">
                 <img
-                  src="./assets/images/fouet-et-spatule.png"
-                  alt=""
+                  src="./assets/images/tisanière-44cl-avec-filtre.png"
+                  alt="tisanière 44cl avec filtre"
                   class="c-product-card__image"
-                  width="400"
-                  height="475"
+                  width="550"
+                  height="414"
                 />
               </div>
-              <div class="c-product-card__info">
-                <div class="c-product-card__text">
+              <div
+                class="c-product-card__info product-carousel-section__card__info"
+              >
+                <div
+                  class="c-product-card__text product-carousel-section__card__text"
+                >
                   <h2 class="c-product-card__title">
-                    Bundle 45E infu + gourde
+                    Tisanière 44Cl avec filtre
                   </h2>
-                  <p class="c-product-card__description">Lorem Ipsum</p>
+                  <p class="c-product-card__description">T.TOTEM</p>
                 </div>
-                <div class="c-product-card__price">17.90€</div>
+                <div class="c-product-card__price">23,50€</div>
                 <button class="c-button">Ajouter</button>
               </div>
             </article>
@@ -263,21 +308,23 @@
             >
               <div class="c-product-card__image-wrapper">
                 <img
-                  src="./assets/images/fouet-et-spatule.png"
-                  alt=""
+                  src="./assets/images/gourde-aqua-rosa.png"
+                  alt="gourde aqua rosa"
                   class="c-product-card__image"
                   width="400"
-                  height="475"
+                  height="343"
                 />
               </div>
-              <div class="c-product-card__info">
-                <div class="c-product-card__text">
-                  <h2 class="c-product-card__title">
-                    Bundle 45E infu + gourde
-                  </h2>
+              <div
+                class="c-product-card__info product-carousel-section__card__info"
+              >
+                <div
+                  class="c-product-card__text product-carousel-section__card__text"
+                >
+                  <h2 class="c-product-card__title">Gourde Aqua Rosa</h2>
                   <p class="c-product-card__description">Lorem Ipsum</p>
                 </div>
-                <div class="c-product-card__price">17.90€</div>
+                <div class="c-product-card__price">37,00€</div>
                 <button class="c-button">Ajouter</button>
               </div>
             </article>
@@ -289,21 +336,23 @@
                 class="c-product-card__image-wrapper product-carousel-section__card-image-wrapper"
               >
                 <img
-                  src="./assets/images/fouet-et-spatule.png"
+                  src="./assets/images/lorem-ipsum-1.png"
                   alt=""
                   class="c-product-card__image"
                   width="400"
-                  height="475"
+                  height="485"
                 />
               </div>
-              <div class="c-product-card__info">
-                <div class="c-product-card__text">
-                  <h2 class="c-product-card__title">
-                    Bundle 45E infu + gourde
-                  </h2>
+              <div
+                class="c-product-card__info product-carousel-section__card__info"
+              >
+                <div
+                  class="c-product-card__text product-carousel-section__card__text"
+                >
+                  <h2 class="c-product-card__title">Lorem Ipsum</h2>
                   <p class="c-product-card__description">Lorem Ipsum</p>
                 </div>
-                <div class="c-product-card__price">17.90€</div>
+                <div class="c-product-card__price">37,00€</div>
                 <button class="c-button">Ajouter</button>
               </div>
             </article>
@@ -313,21 +362,23 @@
             >
               <div class="c-product-card__image-wrapper">
                 <img
-                  src="./assets/images/fouet-et-spatule.png"
+                  src="./assets/images/lorem-ipsum-2.png"
                   alt=""
                   class="c-product-card__image"
                   width="400"
-                  height="475"
+                  height="424"
                 />
               </div>
-              <div class="c-product-card__info">
-                <div class="c-product-card__text">
-                  <h2 class="c-product-card__title">
-                    Bundle 45E infu + gourde
-                  </h2>
+              <div
+                class="c-product-card__info product-carousel-section__card__info"
+              >
+                <div
+                  class="c-product-card__text product-carousel-section__card__text"
+                >
+                  <h2 class="c-product-card__title">Lorem Ipsum</h2>
                   <p class="c-product-card__description">Lorem Ipsum</p>
                 </div>
-                <div class="c-product-card__price">17.90€</div>
+                <div class="c-product-card__price">37,00€</div>
                 <button class="c-button">Ajouter</button>
               </div>
             </article>
@@ -337,21 +388,23 @@
             >
               <div class="c-product-card__image-wrapper">
                 <img
-                  src="./assets/images/fouet-et-spatule.png"
+                  src="./assets/images/lorem-ipsum-3.png"
                   alt=""
                   class="c-product-card__image"
                   width="400"
-                  height="475"
+                  height="353"
                 />
               </div>
-              <div class="c-product-card__info">
-                <div class="c-product-card__text">
-                  <h2 class="c-product-card__title">
-                    Bundle 45E infu + gourde
-                  </h2>
+              <div
+                class="c-product-card__info product-carousel-section__card__info"
+              >
+                <div
+                  class="c-product-card__text product-carousel-section__card__text"
+                >
+                  <h2 class="c-product-card__title">Lorem Ipsum</h2>
                   <p class="c-product-card__description">Lorem Ipsum</p>
                 </div>
-                <div class="c-product-card__price">17.90€</div>
+                <div class="c-product-card__price">34,90€</div>
                 <button class="c-button">Ajouter</button>
               </div>
             </article>
