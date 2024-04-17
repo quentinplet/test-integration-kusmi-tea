@@ -93,11 +93,6 @@ body {
       object-fit: contain;
     }
 
-    &__info {
-      width: fit-content;
-      margin-inline: auto;
-    }
-
     &__text {
       height: 4.1875rem;
     }
@@ -180,6 +175,12 @@ body {
   }
 }
 
+@media (min-width: 420px) {
+  .swiper-container {
+    padding: 0 30px;
+  }
+}
+
 @media (min-width: 640px) {
   .swiper-container {
     padding: 0 50px;
@@ -192,7 +193,7 @@ body {
   }
   .product-carousel-section {
     &__title {
-      max-width: fit-content;
+      width: fit-content;
       margin-inline: auto;
     }
   }
@@ -271,7 +272,7 @@ body {
   }
 }
 
-@media (min-width: 1420px) {
+@media (min-width: 1460px) {
   .product-carousel-section {
     &__card {
       &__text {

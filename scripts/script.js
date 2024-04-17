@@ -13,13 +13,13 @@ let swiperCards = new Swiper(".product-carousel-section__content", {
   slidesPerView: 2,
 
   breakpoints: {
-    640: {
+    550: {
       slidesPerView: 3,
     },
-    768: {
+    778: {
       slidesPerView: 4,
     },
-    1280: {
+    1150: {
       slidesPerView: 5,
     },
   },
