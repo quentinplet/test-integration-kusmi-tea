@@ -6,7 +6,8 @@
     "sass": "sass --watch sass:"
   },
   "dependencies": {
-    "sass": "^1.75.0"
+    "sass": "^1.75.0",
+    "serve": "^14.2.1"
   },
   "author": "quentin-plet",
   "license": "ISC"
