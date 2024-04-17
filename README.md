@@ -5,7 +5,7 @@
 Intégration d'une page d'opération à partir d'une maquette Figma en HTML, CSS (Sass) et JavaScript natif.
 La page web est totalement responsive.
 
-Une démo en ligne est disponible ici :
+La page web est disponible en ligne ici : https://quentinplet.github.io/test-integration-kusmi-tea/
 
 ## Choix de conception
 
@@ -17,8 +17,8 @@ J'ai utilisé les technologies suivantes :
 ## Pour exécuter l'application localement
 
 ```bash
-git clone https://github.com/quentinplet/react-morty-quentin.git
-cd react-morty-quentin
+git clone https://github.com/quentinplet/test-integration-kusmi-tea.git
+cd test-integration-kusmi-tea
 npm install
 npx serve
 ```
